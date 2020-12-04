@@ -28,6 +28,10 @@
   color: white;
 }
 
+.input-container:first-child {
+  padding-top: 0rem;
+}
+
 .input-container {
   padding: 2.5% 0;
 }
@@ -51,9 +55,36 @@
   visibility: hidden;
 }
 
+.input-container.correct i.correct {
+  visibility: visible;
+}
+
+.input-container.correct .input {
+  border-color: #2bbd34;
+}
+
+.input-container.wrong .input {
+  border-color: #e93e3e;
+}
+
 .input-box i.wrong {
   color: #e93e3e;
-  /* visibility: hidden; */
+  visibility: hidden;
+}
+
+.input-container small {
+  display: inline-block;
+  margin-top: 1%;
+  visibility: hidden;
+  color: #e93e3e;
+}
+
+.input-container.wrong i.wrong {
+  visibility: visible;
+}
+
+.input-container.wrong small {
+  visibility: visible;
 }
 
 .input-container label {
@@ -72,6 +103,8 @@
   border: none;
   background-color: inherit;
   border-bottom: 0.2rem solid #333333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
   letter-spacing: 0.1vw;
   word-spacing: 0.1vw;
 }
@@ -79,6 +112,7 @@
 .input-container .placeicon::-webkit-input-placeholder {
   font-family: FontAwesome, "Montserrat", sans-serif;
   font-weight: normal;
+  font-size: 1rem;
   overflow: visible;
   vertical-align: top;
 }
