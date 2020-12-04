@@ -1,0 +1,10 @@
+/* Arquivo para unificação de import */
+
+/* Reset de estilos padrão */
+@import url(reset.css);
+
+/* Estilos do corpo da página */
+@import url(body.css);
+
+/* Estilos da página Cadastro */
+@import url(cadastro.css);
