@@ -4,29 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Import CSS Cadastro -->
-    <link rel="stylesheet" href="css/cadastro.css">
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="css/import.css">
     <title>Cadastro</title>
 </head>
 <body>
-    <h1>Cadastro</h1>
-    <form action="">
 
-        <div class="input-container">
-            <label for="name">Nome completo:</label>
-            <input class="input" type="text" name="name" placeholder="Digite seu nome completo aqui...">
+    <div class="cadastro-container">
+        <div class="cadastro-box">
+            <div class="cadastro-header">
+                <h1>Cadastro</h1>
+            </div>
+            <div class="cadastro-content">
+                
+                <form action="">
+                    <div class="input-container">
+                        <label for="name">Nome completo:</label>
+                        <div class="input-box">
+                            <input class="input placeicon" type="text" name="name" placeholder="&#xf007; Digite seu nome completo aqui...">
+                            <i class="fas fa-check-circle correct"></i>
+                            <i class="fas fa-times-circle wrong"></i>
+                        </div>
+                        
+                    </div>
+                    <div class="input-container" data-error="sas">
+                        <label for="email">E-mail:</label>
+                        <input class="input placeicon" type="email" name="email" placeholder="&#xf0e0; Digite seu endereço e-mail aqui...">
+                    </div>
+                    <div class="input-container">
+                        <label for="password">Senha:</label>
+                        <input class="input placeicon" type="text" name="password" placeholder="&#xf09c; Digite sua senha aqui...">
+                    </div>
+                
+                    <input id="submit" type="submit" value="Enviar">
+                </form>
+            </div>
         </div>
-        <div class="input-container" data-error="sas">
-            <label for="email">E-mail:</label>
-            <input class="input" type="email" name="email" placeholder="Digite seu endereço e-mail aqui...">
-        </div>
-        <div class="input-container">
-            <label for="password">Senha:</label>
-            <input class="input" type="text" name="password" placeholder="Digite sua senha aqui...">
-        </div>
-        
-        <input id="submit" type="submit" value="Enviar">
-    </form>
+    </div>
 
     <!-- Import JS  -->
     <!-- Reset Form Error -->
