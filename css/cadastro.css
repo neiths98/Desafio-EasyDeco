@@ -1,0 +1,109 @@
+.cadastro-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadastro-box {
+  border-radius: 1rem;
+  width: 50%;
+  overflow: hidden;
+  background-color: #e6e5e5;
+  box-shadow: 0px 0px 17px -1px rgb(84, 84, 84);
+}
+
+.cadastro-content {
+  margin: 5%;
+}
+
+.cadastro-header {
+  background-color: #333333;
+  padding: 5% 15%;
+  width: 100%;
+}
+
+.cadastro-header h1 {
+  color: white;
+}
+
+.input-container {
+  padding: 2.5% 0;
+}
+
+.input-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.input-box i {
+  position: absolute;
+  right: 0;
+  margin-right: 5%;
+}
+
+.input-box i.correct {
+  color: #2bbd34;
+  visibility: hidden;
+}
+
+.input-box i.wrong {
+  color: #e93e3e;
+  /* visibility: hidden; */
+}
+
+.input-container label {
+  display: inline-block;
+  padding-bottom: 2.5%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.input-container .input {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  border-bottom: 0.2rem solid #333333;
+  letter-spacing: 0.1vw;
+  word-spacing: 0.1vw;
+}
+
+.input-container .placeicon::-webkit-input-placeholder {
+  font-family: FontAwesome, "Montserrat", sans-serif;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+}
+
+.input-container i {
+  position: absolute;
+}
+
+.input-container[data-error]::after {
+  content: attr(data-error);
+}
+
+#submit {
+  display: block;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5% 0;
+  width: 50%;
+  background-color: #e9df23;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: 0px 0px 10px 3px rgb(191, 188, 191);
+}
