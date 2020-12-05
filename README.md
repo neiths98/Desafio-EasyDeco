@@ -6,8 +6,8 @@ Requisitos:
   - Campo de Nome, E-mail e Senha
   - Validação de campos
 
-*Critérios de validação:*
- -Nome: 
+Critérios de validação:
+  -Nome: 
     - Não especificado
  -E-mail:
     - Não especificado
