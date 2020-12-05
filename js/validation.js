@@ -8,33 +8,64 @@ document.getElementById('submit').onclick = function(event) {
     if(checkInputs()) {
         Swal.fire({
             icon:  'success',
-            title: 'Oops...',
-            text: 'Something went wrong!',
+            title: 'Cadastrado!',
+            text: 'Operação concluída com sucesso!',
         });
     }
     else {
         Swal.fire({
             icon:  'error',
-            title: 'Oops...',
-            text: 'Something went wrong!',
+            title: 'Cadastro NÃO realizado',
+            text: 'Confira os campos com erro',
         });
     }
 };
 
 function checkInputs() {
     const nameValue = name.value.trim();
+    const passwordValue = password.value; // espaço é um caractere especial?
     let values = [];
+
+    // Validação NOME
     if (nameValue === '') {
         setError(name, "Campo não foi preenchido");
-        values.push(false);
+        values.push("false");
     }
     else {
         setSucess(name, "uhuu");
-        values.push(true);
+        values.push("true");
     }
-    console.log(values);
 
-    if(values.every(elem => elem === true)) {
+    // Validação EMAIL
+
+
+    // Validação SENHA
+    if (passwordValue === '') {
+        setError(password, "Campo não foi preenchido");
+        values.push("false");
+        
+    }
+    else if (passwordValue.length < 8) {
+        setError(password, "A senha deve conter no mínimo 8 caracteres");
+        values.push("false");
+    }
+    else if (passwordValue.length > 14) {
+        setError(password, "A senha deve conter no máximo 14 caracteres");
+        values.push("false");
+    }
+    else if ($.isNumeric(passwordValue)){
+        setError(password, "Obrigatório pelo menos um caracter maíusculo, um minúsculo e um caracter especial");
+        values.push("false");
+    }
+    else {
+        setSucess(password, "uhuu");
+        values.push("true");
+    }
+
+
+    // Validação da validação
+    console.log(values);
+    if(values.every(elem => elem === "true")) {
         return true;
     }
     else {
