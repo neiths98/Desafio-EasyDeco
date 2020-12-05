@@ -5,17 +5,40 @@ const password = document.getElementById('password');
 
 document.getElementById('submit').onclick = function(event) {
     event.preventDefault();
-    checkInputs();
+    if(checkInputs()) {
+        Swal.fire({
+            icon:  'success',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+        });
+    }
+    else {
+        Swal.fire({
+            icon:  'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+        });
+    }
 };
 
 function checkInputs() {
     const nameValue = name.value.trim();
-
+    let values = [];
     if (nameValue === '') {
         setError(name, "Campo não foi preenchido");
+        values.push(false);
     }
     else {
         setSucess(name, "uhuu");
+        values.push(true);
+    }
+    console.log(values);
+
+    if(values.every(elem => elem === true)) {
+        return true;
+    }
+    else {
+        return false;
     }
 }
 
