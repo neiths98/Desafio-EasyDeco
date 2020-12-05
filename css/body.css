@@ -1,7 +1,16 @@
 /* Arquivo destinado ao novo padrão de estilos do site */
 
 body {
-  background-color: #f4ee7b;
+  /* Cores  */
+  --background-color: #f4ee7b;
+  --background-color-alt: #e6e5e5;
+  --background-color-header: #333333;
+  --text-color-header: white;
+  --text-color: black;
+  --text-color-placeholder: #9d9e9d;
+  --submit-color: #e9df23;
+
+  background-color: var(--background-color);
 }
 
 h1 {
