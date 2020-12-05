@@ -6,6 +6,8 @@
 
     <!-- Import CSS -->
     <link rel="stylesheet" href="css/import.css">
+    <!-- Logo na Guia -->
+    <link rel="icon" type="imagem/png" href="assets/logo_coracao_azul.png" />
     <title>Cadastro</title>
 </head>
 <body>
@@ -17,23 +19,35 @@
             </div>
             <div class="cadastro-content">
                 
-                <form action="">
+                <form id="form" action="">
                     <div class="input-container">
                         <label for="name">Nome completo:</label>
                         <div class="input-box">
-                            <input class="input placeicon" type="text" name="name" placeholder="&#xf007; Digite seu nome completo aqui...">
+                            <input id="name" class="input placeicon" type="text" name="name" placeholder="&#xf007; Digite seu nome completo aqui...">
                             <i class="fas fa-check-circle correct"></i>
                             <i class="fas fa-times-circle wrong"></i>
                         </div>
-                        
+                        <small>erro</small>
                     </div>
-                    <div class="input-container" data-error="sas">
+                    <div class="input-container">
                         <label for="email">E-mail:</label>
-                        <input class="input placeicon" type="email" name="email" placeholder="&#xf0e0; Digite seu endereço e-mail aqui...">
+                        <div class="input-box">
+                            <input id="email" class="input placeicon" type="email" name="email"
+                                placeholder="&#xf0e0; Digite seu endereço e-mail aqui...">
+                            <i class="fas fa-check-circle correct"></i>
+                            <i class="fas fa-times-circle wrong"></i>
+                        </div>
+                        <small>erro</small>
                     </div>
                     <div class="input-container">
                         <label for="password">Senha:</label>
-                        <input class="input placeicon" type="text" name="password" placeholder="&#xf09c; Digite sua senha aqui...">
+                        <div class="input-box">
+                            <input id="password" class="input placeicon" type="text" name="password"
+                                placeholder="&#xf09c; Digite sua senha aqui...">
+                            <i class="fas fa-check-circle correct"></i>
+                            <i class="fas fa-times-circle wrong"></i>
+                        </div>
+                        <small>erro</small>
                     </div>
                 
                     <input id="submit" type="submit" value="Enviar">
@@ -43,9 +57,9 @@
     </div>
 
     <!-- Import JS  -->
-    <!-- Reset Form Error -->
-    <script src="js/reset-error.js"></script>
-
-    <script src="js/reset-submit.js"></script>
+    <!-- Validação de Campos -->
+    <script src="js/validation.js"></script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 </html>
