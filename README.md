@@ -1,3 +1,8 @@
 # Desafio-EasyDeco
 
-Este repositório tem como objetivo criar uma página de cadastro para a resolução do desafio de processo seletivo da EasyDeco.
+Este repositório refere-se à criação de uma página de cadastro para a resolução do desafio do processo seletivo de estágio da EasyDeco.
+
+Requisitado:
+  -
+
+
