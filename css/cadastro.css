@@ -8,9 +8,9 @@
 
 .cadastro-box {
   border-radius: 1rem;
-  width: 50%;
+  width: 40%;
   overflow: hidden;
-  background-color: #e6e5e5;
+  background-color: var(--background-color-alt);
   box-shadow: 0px 0px 17px -1px rgb(84, 84, 84);
 }
 
@@ -19,8 +19,10 @@
 }
 
 .cadastro-header {
-  background-color: #333333;
-  padding: 5% 15%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-color-header);
+  padding: 5% 0;
   width: 100%;
 }
 
@@ -93,6 +95,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
+  color: var(--text-color);
 }
 
 .input-container .input {
@@ -102,7 +105,7 @@
   outline: none;
   border: none;
   background-color: inherit;
-  border-bottom: 0.2rem solid #333333;
+  border-bottom: 0.2rem solid var(--background-color-header);
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.1vw;
@@ -111,6 +114,7 @@
 
 .input-container .placeicon::-webkit-input-placeholder {
   font-family: FontAwesome, "Montserrat", sans-serif;
+  color: var(--text-color-placeholder);
   font-weight: normal;
   font-size: 1rem;
   overflow: visible;
@@ -132,7 +136,7 @@
   margin-right: auto;
   padding: 2.5% 0;
   width: 50%;
-  background-color: #e9df23;
+  background-color: var(--submit-color);
   outline: none;
   border: none;
   border-radius: 0.3rem;
