@@ -9,10 +9,9 @@
 </h4>
 
 # Tabela de conteúdos
-=================
 <!--ts-->
    * [Teste](#Teste)
-   * [Minha Página](#minha-pagina)
+   * [Minha Página](#minha-página)
 <!--te-->
 
 ## Teste
@@ -41,7 +40,6 @@
     
 
 ## Minha Página
-<a name="minha-pagina"/>
 
 **🛠 Tecnologias utilizadas**
 
