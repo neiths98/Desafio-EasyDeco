@@ -155,3 +155,41 @@
   font-weight: 600;
   box-shadow: 0px 0px 10px 3px rgb(191, 188, 191);
 }
+
+@media (max-width: 992px) {
+  .cadastro-box {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cadastro-box {
+    width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .cadastro-box {
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .cadastro-box {
+    width: 90%;
+    height: fit-content;
+  }
+
+  .cadastro-box h1 {
+    font-size: 3rem;
+  }
+
+  .input-container label {
+    font-size: 1.2rem;
+  }
+
+  .input-container .input,
+  .input-container .placeicon::-webkit-input-placeholder {
+    font-size: 0.8rem;
+  }
+}
