@@ -1,6 +1,6 @@
-# Desafio-EasyDeco
+# Teste-EasyDeco
 
->Este repositório refere-se à criação de uma página de cadastro para a resolução do desafio do processo seletivo de estágio da EasyDeco.
+>Este repositório refere-se à criação de uma página de cadastro para a resolução do teste do processo seletivo de estágio da EasyDeco.
 
 # Teste
 
@@ -25,6 +25,34 @@ Critérios de validação:
     - Não é permitido repetir a mesma sequencia de caracteres
     
 # Minha Página
-    
+
+**🛠 Tecnologias utilizadas**
+
+- HTML5 e CSS3
+- Javascript
+- JQuery
+- SweetAlert2
+
+Contemplado:
+  - Campo de Nome, E-mail e Senha
+  - Mensagem de sucesso
+  
+ Parcialmente contemplado:
+  - Responsividade
+  - Animações
+  - Validação:
+    - Nome: 
+      - Não preenchido
+    - Senha:
+      - Mínimo de 8 caracteres
+      - Máximo de 14 caracteres 
+      - Negação de senhas totalmente numéricas
+      
+Adicionais:
+  - pop up de submissão
+  
+
+  
+  
   
 
