@@ -26,13 +26,13 @@
   - Animações
 
 #### Critérios de validação:
-
-  ##### Nome:
-  	* Não especificado
+  - Nome
+  	- Não especificado
 		
-  ##### E-mail:
+  - E-mail:
     - Não especificado
- ##### Senha:
+    
+ - Senha:
     - Mínimo de 8 caracteres
     - Máximo de 14 caracteres
     - Obrigatório pelo menos um caracter maíusculo, um minúsculo, um número e um caracter especial
