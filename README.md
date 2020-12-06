@@ -57,12 +57,12 @@
   - Responsividade
   - Animações
   - Validação:
-    ##### - Nome: 
-      		- Não preenchido
-    ##### - Senha:
-     		 - Mínimo de 8 caracteres
-      - Máximo de 14 caracteres 
-      - Negação de senhas totalmente numéricas
+    - Nome: 
+    	- Não preenchido
+    - Senha:
+    	- Mínimo de 8 caracteres
+      	- Máximo de 14 caracteres 
+      	- Negação de senhas totalmente numéricas
       
 #### Adicionais:
   - pop up de submissão
