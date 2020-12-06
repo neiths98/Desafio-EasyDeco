@@ -2,6 +2,18 @@
 
 >Este repositório refere-se à criação de uma página de cadastro para a resolução do teste do processo seletivo de estágio da EasyDeco.
 
+<h4 align="center"> 
+  Status: </br>
+	🚧  Em construção...  🚧
+</h4>
+
+Tabela de conteúdos
+=================
+<!--ts-->
+   * [Teste](#Teste)
+   * [Minha Página](#)
+<!--te-->
+
 # Teste
 
 Requisitos:
