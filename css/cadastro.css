@@ -110,6 +110,11 @@
   font-size: 1rem;
   letter-spacing: 0.1vw;
   word-spacing: 0.1vw;
+  transition: 0.2s;
+}
+
+.input-container .input:focus {
+  border-color: var(--highlight-color);
 }
 
 .input-container .placeicon::-webkit-input-placeholder {
@@ -119,6 +124,11 @@
   font-size: 1rem;
   overflow: visible;
   vertical-align: top;
+}
+
+.input-container .placeicon:focus::-webkit-input-placeholder {
+  color: var(--highlight-color);
+  opacity: 90%;
 }
 
 .input-container i {

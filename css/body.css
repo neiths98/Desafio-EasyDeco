@@ -9,6 +9,7 @@ body {
   --text-color: black;
   --text-color-placeholder: #9d9e9d;
   --submit-color: #e9df23;
+  --highlight-color: #05acda;
 
   background-color: var(--background-color);
 }

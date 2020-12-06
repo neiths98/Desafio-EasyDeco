@@ -97,11 +97,6 @@ function checkInputs() {
     }
 }
 
-function reset(input) {
-    
-}
-
-
 function setError(input, message) {
     const inputBox = input.parentElement;
     const small = inputBox.parentElement.querySelector('small');
