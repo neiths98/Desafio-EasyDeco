@@ -36,6 +36,7 @@ Critérios de validação:
     - Obrigatório pelo menos um caracter maíusculo, um minúsculo, um número e um caracter especial
     - Não é permitido repetir a mesma sequencia de caracteres
     
+<a name="minha-pagina"/>
 # Minha Página
 
 **🛠 Tecnologias utilizadas**
