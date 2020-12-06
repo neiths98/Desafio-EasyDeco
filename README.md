@@ -51,12 +51,13 @@
 #### Contemplado:
   - Campo de Nome, E-mail e Senha
   - Mensagem de sucesso
-  - Validação:
-  	- E-mail
-  
-#### Parcialmente contemplado:
   - Responsividade
   - Animações
+  - Validação:
+  	- E-mail
+
+  
+#### Parcialmente contemplado:
   - Validação:
     - Nome: 
     	- Não preenchido
