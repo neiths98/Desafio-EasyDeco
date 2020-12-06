@@ -16,21 +16,21 @@
 
 ## Teste
 
-Requisitos:
+#### Requisitos:
   - Campo de Nome, E-mail e Senha
   - Validação de campos
   - Mensagem de sucesso
   
-Sugerido:
+#### Sugerido:
   - Responsividade
   - Animações
 
-Critérios de validação:
-  - Nome: 
+#### Critérios de validação:
+  ##### - Nome: 
     - Não especificado
-  - E-mail:
+  ##### - E-mail:
     - Não especificado
- -Senha:
+ ##### -Senha:
     - Mínimo de 8 caracteres
     - Máximo de 14 caracteres
     - Obrigatório pelo menos um caracter maíusculo, um minúsculo, um número e um caracter especial
@@ -47,22 +47,22 @@ Critérios de validação:
 - JQuery
 - SweetAlert2
 
-Contemplado:
+#### Contemplado:
   - Campo de Nome, E-mail e Senha
   - Mensagem de sucesso
   
- Parcialmente contemplado:
+#### Parcialmente contemplado:
   - Responsividade
   - Animações
   - Validação:
-    - Nome: 
+    ##### - Nome: 
       - Não preenchido
-    - Senha:
+    ##### - Senha:
       - Mínimo de 8 caracteres
       - Máximo de 14 caracteres 
       - Negação de senhas totalmente numéricas
       
-Adicionais:
+#### Adicionais:
   - pop up de submissão
   
 
