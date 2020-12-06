@@ -7,14 +7,14 @@
 	🚧  Em construção...  🚧
 </h4>
 
-Tabela de conteúdos
+#Tabela de conteúdos
 =================
 <!--ts-->
    * [Teste](#Teste)
    * [Minha Página](#minha-pagina)
 <!--te-->
 
-# Teste
+## Teste
 
 Requisitos:
   - Campo de Nome, E-mail e Senha
@@ -36,8 +36,9 @@ Critérios de validação:
     - Obrigatório pelo menos um caracter maíusculo, um minúsculo, um número e um caracter especial
     - Não é permitido repetir a mesma sequencia de caracteres
     
-<a name="minha-pagina"/>
+
 ## Minha Página
+<a name="minha-pagina"/>
 
 **🛠 Tecnologias utilizadas**
 
