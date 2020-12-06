@@ -17,3 +17,12 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 3.5rem;
 }
+
+input[type="submit"] {
+  transition: ease-in-out 0.2s;
+}
+
+input[type="submit"]:hover {
+  filter: brightness(90%);
+  cursor: pointer;
+}
