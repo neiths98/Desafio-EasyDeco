@@ -7,7 +7,7 @@
 	🚧  Em construção...  🚧
 </h4>
 
-#Tabela de conteúdos
+# Tabela de conteúdos
 =================
 <!--ts-->
    * [Teste](#Teste)
@@ -26,11 +26,13 @@
   - Animações
 
 #### Critérios de validação:
-  ##### - Nome: 
+
+  ##### Nome:
+  	* Não especificado
+		
+  ##### E-mail:
     - Não especificado
-  ##### - E-mail:
-    - Não especificado
- ##### -Senha:
+ ##### Senha:
     - Mínimo de 8 caracteres
     - Máximo de 14 caracteres
     - Obrigatório pelo menos um caracter maíusculo, um minúsculo, um número e um caracter especial
@@ -56,9 +58,9 @@
   - Animações
   - Validação:
     ##### - Nome: 
-      - Não preenchido
+      		- Não preenchido
     ##### - Senha:
-      - Mínimo de 8 caracteres
+     		 - Mínimo de 8 caracteres
       - Máximo de 14 caracteres 
       - Negação de senhas totalmente numéricas
       
