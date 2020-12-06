@@ -37,7 +37,7 @@ Critérios de validação:
     - Não é permitido repetir a mesma sequencia de caracteres
     
 <a name="minha-pagina"/>
-# Minha Página
+## Minha Página
 
 **🛠 Tecnologias utilizadas**
 
