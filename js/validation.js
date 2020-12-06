@@ -10,6 +10,7 @@ document.getElementById('submit').onclick = function(event) {
             icon:  'success',
             title: 'Cadastrado!',
             text: 'Operação concluída com sucesso!',
+            width: '30%',
         });
     }
     else {
@@ -17,6 +18,7 @@ document.getElementById('submit').onclick = function(event) {
             icon:  'error',
             title: 'Cadastro NÃO realizado',
             text: 'Confira os campos com erro',
+            width: '30%',
         });
     }
 };
@@ -93,6 +95,10 @@ function checkInputs() {
     else {
         return false;
     }
+}
+
+function reset(input) {
+    
 }
 
 
