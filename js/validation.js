@@ -23,8 +23,13 @@ document.getElementById('submit').onclick = function(event) {
 
 function checkInputs() {
     const nameValue = name.value.trim();
-    const passwordValue = password.value; // espaço é um caractere especial?
+    const passwordValue = password.value;
+    const emailValue = email.value.trim();
     let values = [];
+    let numbers = /[0-9]/;
+    let alfanum = /[:alnum:]/;
+    let especial = /[!"#$%&'()*+,\\\-. /:;<=>?@\[\]^_`{\|}]/; // espaço foi considerado como caracter especial
+    let emailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     // Validação NOME
     if (nameValue === '') {
@@ -37,6 +42,15 @@ function checkInputs() {
     }
 
     // Validação EMAIL
+    if (emailFormat.test(emailValue)) {
+        setSucess(email, "uhuu");
+        values.push("true");
+        console.log("email ok");
+    }
+    else {
+        setError(email, "E-mail inválido");
+        values.push("false");
+    }
 
 
     // Validação SENHA
@@ -45,16 +59,24 @@ function checkInputs() {
         values.push("false");
         
     }
-    else if (passwordValue.length < 8) {
+    // senha curta
+    else if (passwordValue.length < 8) { 
         setError(password, "A senha deve conter no mínimo 8 caracteres");
         values.push("false");
     }
+    // senha longa
     else if (passwordValue.length > 14) {
         setError(password, "A senha deve conter no máximo 14 caracteres");
         values.push("false");
     }
+    // senha totalmente numérica
     else if ($.isNumeric(passwordValue)){
         setError(password, "Obrigatório pelo menos um caracter maíusculo, um minúsculo e um caracter especial");
+        values.push("false");
+    }
+    // senha sem números
+    else if(!numbers.test(passwordValue)) {
+        setError(password, "Obrigatório pelo menos um caracter numérico");
         values.push("false");
     }
     else {
