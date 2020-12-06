@@ -4,7 +4,8 @@
 
 <h4 align="center"> 
   Status: </br>
-	🚧  Em construção...  🚧
+	🚧  Em construção...  🚧 <br/><br/>
+	link: https://neiths98.github.io/Desafio-EasyDeco/cadastro.html
 </h4>
 
 # Tabela de conteúdos
