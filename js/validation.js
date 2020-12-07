@@ -97,6 +97,11 @@ function checkInputs() {
         setError(password, "Obrigatório pelo menos um caracter especial");
         values.push("false");
     }
+    // senha com muita repetição
+    else if (haveCharLoop(passwordValue)) {
+        setError(password, "Não é permitido repetir a mesma sequencia de caracteres ou ter muitos caracteres repetidos");
+        values.push("false");
+    }
     else {
         setSucess(password, "uhuu");
         values.push("true");
@@ -146,6 +151,20 @@ function haveUpper(string) {
     let lowerString = string.toLowerCase();
     if (string != lowerString) {
         return true;
+    }
+    return false;
+}
+
+function haveCharLoop(string) {
+    let vet = [];
+    for (let i = 1; i < string.length; i++) {
+        vet.push(string.substring(i-1, i+1));
+    }
+    
+    for(i = 0; i < vet.length; i++) {
+        if(vet.indexOf(vet[i]) != i) {
+            return true;
+        }
     }
     return false;
 }
