@@ -4,13 +4,13 @@
 
 <h4 align="center"> 
   Status: </br>
-	🚧  Em construção...  🚧 <br/><br/>
+	🚧  Em construção...  🚧 <br/> <br/>
 	link: https://neiths98.github.io/Desafio-EasyDeco/cadastro.html
 </h4>
 
 # Tabela de conteúdos
 <!--ts-->
-   * [Teste](#Teste)
+   * [Teste](#teste)
    * [Minha Página](#minha-página)
 <!--te-->
 
