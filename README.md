@@ -45,7 +45,6 @@
 
 - HTML5 e CSS3
 - Javascript
-- JQuery
 - SweetAlert2
 
 #### Contemplado:
@@ -64,7 +63,9 @@
     - Senha:
     	- Mínimo de 8 caracteres
       	- Máximo de 14 caracteres 
-      	- Negação de senhas totalmente numéricas
+      	- Maiúsculas e minúsculas
+	- Caracter especial
+	- Caracter numérico
       
 #### Adicionais:
   - pop up de submissão
