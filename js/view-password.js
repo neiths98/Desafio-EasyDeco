@@ -1,7 +1,6 @@
 const eyeClose = document.querySelector(".eye-close");
 const eyeOpen = document.querySelector(".eye-open");
 
-const passwordConfirm = document.getElementById("password-2");
 const eyeCloseConfirm = document.querySelector(".eye-close-confirm");
 const eyeOpenConfirm = document.querySelector(".eye-open-confirm");
 

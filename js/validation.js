@@ -2,6 +2,7 @@ const form = document.getElementById('form');
 const name = document.getElementById('name');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
+const passwordConfirm = document.getElementById("password-2");
 
 document.getElementById('submit').onclick = function(event) {
     event.preventDefault();
@@ -25,8 +26,9 @@ document.getElementById('submit').onclick = function(event) {
 
 function checkInputs() {
     const nameValue = name.value.trim();
-    const passwordValue = password.value;
     const emailValue = email.value.trim();
+    const passwordValue = password.value;
+    const passwordConfirmValue = passwordConfirm.value;
     let values = [];
     let numbers = /[0-9]/;
     let especial = /[!"#$%&'()*+,\\\-. /:;<=>?@\[\]^_`{\|}]/; // espaço foi considerado como caracter especial
@@ -104,6 +106,16 @@ function checkInputs() {
     }
     else {
         setSucess(password, "uhuu");
+        values.push("true");
+    }
+
+    // Validação CONFIRMAÇÃO SENHA
+    if (passwordConfirmValue != passwordValue) {
+        setError(passwordConfirm, "Senhas não coincidem");
+        values.push("false");
+    }
+    else {
+        setSucess(passwordConfirm, "uhuu");
         values.push("true");
     }
 
