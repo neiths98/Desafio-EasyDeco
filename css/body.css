@@ -35,3 +35,9 @@ input[type="submit"]:hover {
 .swal2-title {
   font-size: 1.5rem;
 }
+
+.obs > p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  color: var(--text-color-placeholder);
+}
