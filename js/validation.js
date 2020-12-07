@@ -68,6 +68,7 @@ function checkInputs() {
 
 
     // Validação SENHA
+    let success = false;
     if (passwordValue === '') {
         setError(password, "Campo não foi preenchido");
         values.push("false");
@@ -107,11 +108,16 @@ function checkInputs() {
     else {
         setSucess(password, "uhuu");
         values.push("true");
+        success = true;
     }
 
     // Validação CONFIRMAÇÃO SENHA
     if (passwordValue === '') {
         setError(passwordConfirm, "Senha não foi preenchida");
+        values.push("false");
+    }
+    else if(success === false) {
+        setError(passwordConfirm, "A senha não corresponde  aos requisitos");
         values.push("false");
     }
     else if (passwordConfirmValue != passwordValue) {
