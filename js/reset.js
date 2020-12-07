@@ -28,3 +28,13 @@ password.addEventListener("keydown", function() {
         password.parentElement.parentElement.classList.remove("wrong")
     }
 });
+
+// RESET CONFIRMAÇÃO DE SENHA
+passwordConfirm.addEventListener("keydown", function() {
+    if(passwordConfirm.parentElement.parentElement.classList.contains("correct")) {
+        passwordConfirm.parentElement.parentElement.classList.remove("correct");  
+    }
+    else if (passwordConfirm.parentElement.parentElement.classList.contains("wrong")) {
+        passwordConfirm.parentElement.parentElement.classList.remove("wrong")
+    }
+});
