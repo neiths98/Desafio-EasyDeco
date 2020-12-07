@@ -8,7 +8,7 @@
 
 .cadastro-box {
   border-radius: 1rem;
-  width: 40%;
+  width: 35%;
   overflow: hidden;
   background-color: var(--background-color-alt);
   box-shadow: 0px 0px 17px -1px rgb(84, 84, 84);
@@ -35,7 +35,7 @@
 }
 
 .input-container {
-  padding: 2.5% 0;
+  padding: 2% 0;
 }
 
 .input-box {
@@ -91,23 +91,23 @@
 
 .input-container label {
   display: inline-block;
-  padding-bottom: 2.5%;
+  padding-bottom: 1.5%;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--text-color);
 }
 
 .input-container .input {
   display: block;
   width: 100%;
-  height: 2.5rem;
+  height: 2rem;
   outline: none;
   border: none;
   background-color: inherit;
   border-bottom: 0.2rem solid var(--background-color-header);
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   letter-spacing: 0.1vw;
   word-spacing: 0.1vw;
   transition: 0.2s;
@@ -121,7 +121,7 @@
   font-family: FontAwesome, "Montserrat", sans-serif;
   color: var(--text-color-placeholder);
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 0.8rem;
   overflow: visible;
   vertical-align: top;
 }
@@ -152,7 +152,6 @@
 
 #submit {
   display: block;
-  margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
   padding: 2.5% 0;
