@@ -29,7 +29,6 @@ function checkInputs() {
     const emailValue = email.value.trim();
     let values = [];
     let numbers = /[0-9]/;
-    let alfanum = /[:alnum:]/;
     let especial = /[!"#$%&'()*+,\\\-. /:;<=>?@\[\]^_`{\|}]/; // espaço foi considerado como caracter especial
     let emailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
@@ -71,14 +70,20 @@ function checkInputs() {
         setError(password, "A senha deve conter no máximo 14 caracteres");
         values.push("false");
     }
-    // senha totalmente numérica
-    else if ($.isNumeric(passwordValue)){
-        setError(password, "Obrigatório pelo menos um caracter maíusculo, um minúsculo e um caracter especial");
+    // não tem minúscula
+    // não tem maiúscula
+    else if(!haveLower(passwordValue) || !haveUpper(passwordValue)) {
+        setError(password, "Obrigatório pelo menos um caracter maíusculo, um minúsculo");
         values.push("false");
     }
     // senha sem números
     else if(!numbers.test(passwordValue)) {
         setError(password, "Obrigatório pelo menos um caracter numérico");
+        values.push("false");
+    }
+    // senha sem caracter especial
+    else if (!especial.test(passwordValue)) {
+        setError(password, "Obrigatório pelo menos um caracter especial");
         values.push("false");
     }
     else {
@@ -88,7 +93,6 @@ function checkInputs() {
 
 
     // Validação da validação
-    console.log(values);
     if(values.every(elem => elem === "true")) {
         return true;
     }
@@ -96,6 +100,8 @@ function checkInputs() {
         return false;
     }
 }
+
+// Funções de erro / acerto
 
 function setError(input, message) {
     const inputBox = input.parentElement;
@@ -113,4 +119,22 @@ function setSucess(input, message) {
         inputBox.parentElement.classList.remove("wrong");        
     }
     inputBox.parentElement.classList.add("correct");
+}
+
+// Funções para validação
+
+function haveLower(string) {
+    let upperString = string.toUpperCase();
+    if (string != upperString) {
+        return true;
+    }
+    return false;
+}
+
+function haveUpper(string) {
+    let lowerString = string.toLowerCase();
+    if (string != lowerString) {
+        return true;
+    }
+    return false;
 }
