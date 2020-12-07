@@ -54,12 +54,13 @@
   - Animações
   - Validação:
   	- E-mail
-
-  
+	- Nome:
+		- Não preenchido
+		- Com números
+		- Com caracter especial
+		
 #### Parcialmente contemplado:
   - Validação:
-    - Nome: 
-    	- Não preenchido
     - Senha:
     	- Mínimo de 8 caracteres
     	- Máximo de 14 caracteres
