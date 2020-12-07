@@ -62,10 +62,10 @@
     	- Não preenchido
     - Senha:
     	- Mínimo de 8 caracteres
-      	- Máximo de 14 caracteres 
-      	- Maiúsculas e minúsculas
-	- Caracter especial
-	- Caracter numérico
+    	- Máximo de 14 caracteres
+    	- Maiúsculas e minúsculas
+      	- Caracter especial
+    	- Caracter numérico
       
 #### Adicionais:
   - pop up de submissão
