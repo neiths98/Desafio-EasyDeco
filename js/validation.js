@@ -30,6 +30,7 @@ function checkInputs() {
     let values = [];
     let numbers = /[0-9]/;
     let especial = /[!"#$%&'()*+,\\\-. /:;<=>?@\[\]^_`{\|}]/; // espaço foi considerado como caracter especial
+    let especialNoSpace = /[!"#$%&'()*+,\\\-./:;<=>?@\[\]^_`{\|}]/; // espaço NÃO foi considerado caracter especial
     let emailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     // Validação NOME
@@ -43,7 +44,7 @@ function checkInputs() {
         values.push("false");
     }
     // nome com caracter especial
-    else if (especial.test(nameValue)) {
+    else if (especialNoSpace.test(nameValue)) {
         setError(name, "Nome não pode conter caracter especial");
         values.push("false");
     }
