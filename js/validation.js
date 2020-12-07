@@ -110,7 +110,11 @@ function checkInputs() {
     }
 
     // Validação CONFIRMAÇÃO SENHA
-    if (passwordConfirmValue != passwordValue) {
+    if (passwordValue === '') {
+        setError(passwordConfirm, "Senha não foi preenchida");
+        values.push("false");
+    }
+    else if (passwordConfirmValue != passwordValue) {
         setError(passwordConfirm, "Senhas não coincidem");
         values.push("false");
     }
