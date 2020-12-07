@@ -135,6 +135,17 @@
   position: absolute;
 }
 
+.input-container i.eye {
+  right: 1.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+  visibility: hidden;
+}
+
+.input-container i.eye.active {
+  visibility: visible;
+}
+
 .input-container[data-error]::after {
   content: attr(data-error);
 }
