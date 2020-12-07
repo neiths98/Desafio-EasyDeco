@@ -36,6 +36,16 @@ function checkInputs() {
     if (nameValue === '') {
         setError(name, "Campo não foi preenchido");
         values.push("false");
+    } 
+    // nome com número
+    else if (numbers.test(nameValue)) {
+        setError(name, "Nome não pode conter números");
+        values.push("false");
+    }
+    // nome com caracter especial
+    else if (especial.test(nameValue)) {
+        setError(name, "Nome não pode conter caracter especial");
+        values.push("false");
     }
     else {
         setSucess(name, "uhuu");
