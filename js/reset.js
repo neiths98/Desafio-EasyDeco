@@ -1,3 +1,4 @@
+// Funções que cancelam (resetam) ilustrações de ERRO ou ACERTO ao DIGITAR novo conteúdo no campo
 
 // RESET NOME
 name.addEventListener("keydown", function() {
