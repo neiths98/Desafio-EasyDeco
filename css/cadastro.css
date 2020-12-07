@@ -74,6 +74,10 @@
   visibility: hidden;
 }
 
+.input-container .obs {
+  margin-top: 1%;
+}
+
 .input-container small {
   display: inline-block;
   font-size: 0.8rem;
