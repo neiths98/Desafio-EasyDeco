@@ -58,18 +58,20 @@
 		- Não preenchido
 		- Com números
 		- Com caracter especial
+	- Senha:
+		- Mínimo de 8 caracteres
+		- Máximo de 14 caracteres
+		- Maiúsculas e minúsculas
+		- Caracter especial
+		- Caracter numérico
+		- Sequência de caracteres repetidos*
 		
-#### Parcialmente contemplado:
-  - Validação:
-    - Senha:
-    	- Mínimo de 8 caracteres
-    	- Máximo de 14 caracteres
-    	- Maiúsculas e minúsculas
-      	- Caracter especial
-    	- Caracter numérico
+**Obs\*: Também não aceita 3 ou mais caracteres iguais em sequência**
+		
       
 #### Adicionais:
-  - pop up de submissão
+  - Pop up de submissão
+  - Esconder/mostrar a senha
   
 
   
