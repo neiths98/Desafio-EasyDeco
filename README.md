@@ -36,7 +36,7 @@
     - Mínimo de 8 caracteres
     - Máximo de 14 caracteres
     - Obrigatório pelo menos um caracter maíusculo, um minúsculo, um número e um caracter especial
-    - Não é permitido repetir a mesma sequencia de caracteres
+    - Não é permitido repetir a mesma sequência de caracteres
     
 
 ## Minha Página
@@ -57,7 +57,7 @@
 	- Nome:
 		- Não preenchido
 		- Com números
-		- Com caracter especial
+		- Com caracter especial (exceto espaço)
 	- Senha:
 		- Mínimo de 8 caracteres
 		- Máximo de 14 caracteres
@@ -72,6 +72,8 @@
 #### Adicionais:
   - Pop up de submissão
   - Esconder/mostrar a senha
+  - Campo "Confirme sua senha"
+  	- Validação de igualdade com o campo "Senha"
   
 
   
