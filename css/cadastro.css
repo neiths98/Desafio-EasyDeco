@@ -8,7 +8,7 @@
 
 .cadastro-box {
   border-radius: 1rem;
-  width: 35%;
+  width: 40%;
   overflow: hidden;
   background-color: var(--background-color-alt);
   box-shadow: 0px 0px 17px -1px rgb(84, 84, 84);
@@ -76,6 +76,8 @@
 
 .input-container small {
   display: inline-block;
+  font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
   margin-top: 1%;
   visibility: hidden;
   color: #e93e3e;
