@@ -70,7 +70,7 @@
 		
       
 #### Adicionais:
-  - Pop up de submissão
+  - Pop up de submissão (não é bloqueado pelo browser)
   - Esconder/mostrar a senha
   - Campo "Confirme sua senha"
   	- Validação de igualdade com o campo "Senha"
