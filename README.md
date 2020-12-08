@@ -53,7 +53,8 @@
   - Responsividade
   - Animações
   - Validação:
-  	- E-mail
+  	- E-mail:
+		- Padrão de e-mail
 	- Nome:
 		- Não preenchido
 		- Com números
