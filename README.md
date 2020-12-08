@@ -74,6 +74,8 @@
   - Pop up de submissão (não é bloqueado pelo browser)
   - Esconder/mostrar a senha
   - Campo "Confirme sua senha"
+  	- Verifica se o campo senha já foi preenchido
+	- Verifica se o campo senha foi preenchido corretamente
   	- Validação de igualdade com o campo "Senha"
   
 
