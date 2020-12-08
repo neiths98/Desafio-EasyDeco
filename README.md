@@ -4,7 +4,7 @@
 
 <h4 align="center"> 
   Status: </br>
-	🚧  Em construção...  🚧 <br/> <br/>
+🎯  Em Aprimoramento... 🎯  <br/> <br/>
 	link: https://neiths98.github.io/Desafio-EasyDeco/cadastro.html
 </h4>
 
@@ -70,7 +70,7 @@
 		
       
 #### Adicionais:
-  - Pop up de submissão
+  - Pop up de submissão (não é bloqueado pelo browser)
   - Esconder/mostrar a senha
   - Campo "Confirme sua senha"
   	- Validação de igualdade com o campo "Senha"
