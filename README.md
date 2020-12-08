@@ -55,11 +55,11 @@
   - Validação:
   	- E-mail:
 		- Padrão de e-mail
-	- Nome:
+	- Nome (inválido):
 		- Não preenchido
 		- Com números
 		- Com caracter especial (exceto espaço)
-	- Senha:
+	- Senha (requisitos):
 		- Mínimo de 8 caracteres
 		- Máximo de 14 caracteres
 		- Maiúsculas e minúsculas
