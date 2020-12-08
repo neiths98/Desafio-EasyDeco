@@ -33,7 +33,6 @@ function checkInputs() {
     let numbers = /[0-9]/;
     let especial = /[!"#$%&'()*+,\\\-. /:;<=>?@\[\]^_`{\|}]/; // espaço foi considerado como caracter especial
     let especialNoSpace = /[!"#$%&'()*+,\\\-./:;<=>?@\[\]^_`{\|}]/; // espaço NÃO foi considerado caracter especial
-    let emailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     // Validação NOME
     if (nameValue === '') {
@@ -58,10 +57,9 @@ function checkInputs() {
 
     // Validação EMAIL
     // Testa se e-mail está no formato correto (por meio de Regex)
-    if (emailFormat.test(emailValue)) {
+    if (validEmail(emailValue)) {
         setSucess(email, "uhuu");
         values.push("true");
-        console.log("email ok");
     }
     // E-mail adequado
     else {
@@ -205,4 +203,11 @@ function haveCharLoop(string) {
         }
     }
     return false;
+}
+
+// Verifica se string está no formato ideal de um email por meio de regex
+function validEmail(string) {
+    let regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    return regex.test(string);
 }
