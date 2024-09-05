@@ -3,8 +3,6 @@
 >Este repositório refere-se à criação de uma página de cadastro para a resolução do teste do processo seletivo de estágio da EasyDeco.
 
 <h4 align="center"> 
-  Status: </br>
-🎯  Em Aprimoramento... 🎯  <br/> <br/>
 	link: https://neiths98.github.io/Desafio-EasyDeco/cadastro.html
 </h4>
 
